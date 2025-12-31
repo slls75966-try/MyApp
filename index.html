@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon App Test</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <title>Ma Première Pwa Locale</title>
 </head>
 <body>
-    <div class="app-container">
-        <h1>Ma Première PWA Hors-Ligne</h1>
-        <p>Cette application est installable et fonctionne sans connexion internet grâce au Service Worker.</p>
-        
-        <button class="btn-action" onclick="alert('Action locale exécutée !')">
-            Tester l'interaction
-        </button>
-
-        <div id="status" class="status-badge">Vérification du réseau...</div>
+    <div class="container">
+        <h1>🚀 Mon application est en ligne !</h1>
+        <p>Si vous voyez ce message en bleu avec un fond gris clair, c'est que le HTML et le CSS fonctionnent parfaitement sur GitHub Pages.</p>
+        <button onclick="saluer()">Cliquez-ici</button>
+        <p id="message"></p>
     </div>
 
-    <script src="app.js"></script>
+    <script>
+        function saluer() {
+            document.getElementById('message').innerText = "Bravo ! Votre déploiement est réussi. 🎉";
+        }
+    </script>
 </body>
 </html>
